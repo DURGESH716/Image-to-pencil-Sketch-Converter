@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Pic<2>Sketch</title>
+  </head>
+  <body>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Pic<2>Sketch</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="">Home <span class="sr-only">(current)</span></a>
+          </li>
+    <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Get in touch ! 😸 
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+      <a class="dropdown-item" href="mailto:ralhanprateek@gmail.com?subject=Pic2Sketch - Issues&body=I am facing an issue with Pic<2>Sketch!">Prateek Ralhan</a>
+        </div>
+      </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div class="container">
+    <h2 class="text-center mt-5"> Pic<2>Sketch </h2>
+    <form method = post enctype=multipart/form-data>
+     <h3 class="text-center mt-5">Convert your pictures to sketches</h3>
+     <h5 class="text-center mt-5" style="color:Tomato;"> Ensure your Images are of <i>.png/.jpg/.jpeg/.bmp</i> format only. </h5>
+        <div class="p-5 bg-white rounded-lg mt-5"><img src="{{ url_for('static', filename='upload_logo.png') }}" alt="" width="200" class="d-block mx-auto mb-4 ">
+          <hr>
+                <center>
+        <input type=file name=file>
+        <button type="submit" class="btn btn-primary">Upload</button>
+      </center>
+      <hr>
+    </div>
+</form>
+  </div>
+  </body>
+<html>
